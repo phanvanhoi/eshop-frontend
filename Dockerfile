@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 RUN npm run build
  
-# production stage
+# production stage change comment
 FROM node:16.18-alpine as production-stage
 WORKDIR /app
 RUN npm install -g http-server
